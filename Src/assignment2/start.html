@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        /* CSS styles */
+        body {
+            background-image: url('https://i.stack.imgur.com/kx8MT.gif');
+            background-size: cover;
+            height: 100vh;
+            padding:0;
+            margin:0;
+        }
+        
+        .my-class {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            font-variant: small-caps;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            line-height: 1.5;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px;
+            background-color: #378eff;
+        }
+
+        #my-id {
+            color: rgb(255, 0, 0);
+        }
+
+        [role="button"] {
+            background-color: #ff0000;
+            text-align : center;
+        }
+    </style>
+</head>
+<body>
+    <!-- go to page with portfolio with button-->
+    <h1 class="my-class">Portfolio</h1>
+    <p id="my-id">portfolio</p>
+    <button role="button">Click me to go to my portfolio</button>
+    <script>
+        // JavaScript code
+        var button = document.querySelector('button');
+        button.addEventListener('click', function() {
+            window.location.href = 'portfolio.html';
+        });
+    </script>
+
+</body>
+</html>
