@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Test Page</title>
+    <style>
+        /* Add some basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Test Page</h1>
+
+    <h2>Input and Output</h2>
+    <input type="text" id="inputField" placeholder="Enter something">
+    <button onclick="showOutput()">Submit</button>
+    <p id="output"></p>
+
+    <h2>See console for JavaScript Code output</h2>
+
+    <script>
+    // <!-- Variables -->
+        // Number variable
+        var num = 10;
+        console.log(num);
+
+        // String variable
+        var str = "Hello, world!";
+        console.log(str);
+
+        // Boolean variable
+        var bool = true;
+        console.log(bool);
+
+        // Object variable
+        var obj = { name: "John", age: 25 };
+        console.log(obj);
+
+    // <!-- Common Errors and scope -->
+        // Common error: Undefined variable
+        console.log(undefinedVariable); // This will throw an error
+
+        // Avoiding the error with conditionals
+        if (typeof undefinedVariable !== "undefined") {
+            console.log(undefinedVariable);
+        } else {
+            console.log("Variable is undefined");
+        }
+
+        // Scope
+        var globalVar = "I'm a global variable";
+
+        console.log(globalVar);
+
+        // Common error: Accessing a local variable outside of its scope
+        function printLocalVar() {
+            var localVar = "I'm a local variable";
+            console.log(localVar);
+        }
+        console.log(localVar); // This will throw an error
+
+    // <!-- Repetition and array -->
+        // Repetition with for loop
+        for (var i = 0; i < 5; i++) {
+            console.log(i);
+        }
+
+        // Array
+        var fruits = ["apple", "banana", "orange"];
+        console.log(fruits);
+
+    // <!-- Function-->
+        // Function
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        greet("Luke");
+
+    // <!-- Objects and events -->
+        // Object
+        var person = {
+            name: "Luke",
+            age: 30,
+            greet: function() {
+                console.log("Hello, my name is " + this.name);
+            }
+        };
+
+        person.greet();
+
+        // Event
+        document.getElementById("inputField").addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                showOutput();
+            }
+        });
+
+        function showOutput() {
+            var input = document.getElementById("inputField").value;
+            document.getElementById("output").textContent = "You entered: " + input;
+        }
+    </script>
+</body>
+</html>
