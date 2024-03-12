@@ -1,0 +1,3 @@
+# Design
+
+A website that I want to build is a dashboard for managing personal finances. It would include user authentication and registration, account overview with balance and transaction history, budget tracking, expense management, goal setting, data visualization, and reminders. I would implement javascript input and output and use libraries for functions such as graphs. This might be easier with a simple spreadsheet, but I think it would be cool to design my own finance tracker.

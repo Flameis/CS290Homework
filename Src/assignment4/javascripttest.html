@@ -36,63 +36,57 @@
     <button onclick="showOutput()">Submit</button>
     <p id="output"></p>
 
-    <h2>See console for JavaScript Code output</h2>
+    <h2>JavaScript Code output</h2>
 
+    <pre id="log"></pre>
     <script>
+
+    // <!-- Console log output to HTML-->
+    (function () {
+    var old = console.log;
+    var logger = document.getElementById('log');
+    console.log = function () {
+      for (var i = 0; i < arguments.length; i++) {
+        if (typeof arguments[i] == 'object') {
+            logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(arguments[i], undefined, 2) : arguments[i]) + '<br />';
+        } else {
+            logger.innerHTML += arguments[i] + '<br />';
+        }
+      }
+    }
+    })();
+
     // <!-- Variables -->
         // Number variable
         var num = 10;
-        console.log(num);
+        console.log("Number Variable: ", num);
 
         // String variable
         var str = "Hello, world!";
-        console.log(str);
+        console.log("String variable: ", str);
 
         // Boolean variable
         var bool = true;
-        console.log(bool);
+        console.log("Boolean variable: ", bool);
 
         // Object variable
         var obj = { name: "John", age: 25 };
-        console.log(obj);
-
-    // <!-- Common Errors and scope -->
-        // Common error: Undefined variable
-        console.log(undefinedVariable); // This will throw an error
-
-        // Avoiding the error with conditionals
-        if (typeof undefinedVariable !== "undefined") {
-            console.log(undefinedVariable);
-        } else {
-            console.log("Variable is undefined");
-        }
-
-        // Scope
-        var globalVar = "I'm a global variable";
-
-        console.log(globalVar);
-
-        // Common error: Accessing a variable outside of its scope
-        function printLocalVar() {
-            var localVar = "I'm a local variable";
-            console.log(localVar);
-        }
-        console.log(localVar); // This will throw an error
+        console.log("Object variable: ", obj);
 
     // <!-- Repetition and array -->
         // Repetition with for loop
         for (var i = 0; i < 5; i++) {
-            console.log(i);
+            console.log("Repetition with for loop: ", i);
         }
 
         // Array
         var fruits = ["apple", "banana", "orange"];
-        console.log(fruits);
+        console.log("Array: ", fruits);
 
     // <!-- Function-->
         // Function
         function greet(name) {
-            console.log("Hello, " + name + "!");
+            console.log("Function: \nHello, " + name + "!");
         }
 
         greet("Luke");
@@ -103,7 +97,7 @@
             name: "Luke",
             age: 30,
             greet: function() {
-                console.log("Hello, my name is " + this.name);
+                console.log("Object: \nHello, my name is " + this.name);
             }
         };
 
@@ -119,6 +113,37 @@
         function showOutput() {
             var input = document.getElementById("inputField").value;
             document.getElementById("output").textContent = "You entered: " + input;
+        }
+
+    // <!-- Common Errors and scope -->
+        // Common error: Undefined variable
+        try {
+            console.log(undefinedVariable); // This will throw an error
+        } catch (error) {
+            console.log(error);
+        }
+
+        // Avoiding the error with conditionals
+        if (typeof undefinedVariable !== "undefined") {
+            console.log(undefinedVariable);
+        } else {
+            console.log("Errors: \nVariable is undefined");
+        }
+
+        // Scope
+        var globalVar = "I'm a global variable";
+
+        console.log(globalVar);
+
+        // Common error: Accessing a variable outside of its scope
+        function printLocalVar() {
+            var localVar = "I'm a local variable";
+            console.log(localVar);
+        }
+        try {
+            console.log(localVar); // This will throw an error
+        } catch (error) {
+            console.log(error);
         }
     </script>
 </body>
