@@ -1,0 +1,3 @@
+# Design
+
+A website that I want to build is a documentation website explaining how my modding projects work. It would include a navbar, videos, pictures, and well-formatted instructions. There would be a dropdown menu leading to different pages for each project. My to-do list, version history, and wishlist would be included for each project. This would be useful to me because it would concentrate all of the documentation I have made for my projects in one place and allow for better organization. I am often contacted to personally explain things to people when they use my mods.
