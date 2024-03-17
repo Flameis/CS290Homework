@@ -6,3 +6,261 @@
     <link rel="stylesheet" href="styles.css">
     <title>MutExtras</title>
 </head>
+<body>
+    <header>
+        <h1>Extras Mutator</h1>
+    </header>
+
+    <nav class="horizontal-nav">
+        <ul>
+            <li><a href="documentation.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="Public.html">Public Mutators</a>
+                <div class="dropdown-content">
+                    <a href="MutCMenu.html">MutCMenu</a>
+                    <a href="MutExtras.html">MutExtras</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="Private.html">Private Mutators</a>
+                <div class="dropdown-content">
+                    <a href="MutRealismMatch.html">MutRealismMatch</a>
+                    <a href="Servers.html">Servers</a>
+                </div>
+            </li>
+            <form class="formsearch" role="search">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <script src="search.js"></script>
+            </form>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <a href="https://github.com/Flameis/MutExtras" class="github-link-button">GitHub</a>
+
+            <h2>PROJECT DETAILS</h2>
+
+            <p>This is a current Rising Storm 2 Mutator that has been a WIP since April 2021.</p>
+            <p>What does 29th Extras add?</p>
+            <ul>
+                <li>Unlimited roles</li>
+                <li>Custom loadouts</li>
+                <li>AIT's separated into distinct roles</li>
+                <li>New weapons</li>
+                <li>Binos for everyone!</li>
+                <li>A few new cosmetics such as a helmet with customizable rank and unit patches</li>
+                <li>Spawn any weapon with <code>mutate giveweapon</code></li>
+                <li>Spawn any vehicle with <code>mutate spawnvehicle</code></li>
+                <li>A new role to drive tanks</li>
+                <li>The ability to damage tanks with a modified RPG</li>
+                <li>Placeable barricades (WIP)</li>
+                <li>Placeable prefabs (WIP)</li>
+                <li>Tanks and helicopters that are not role or team locked</li>
+            </ul>
+
+            <h2>VISUAL DOCUMENTATION</h2>
+
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1k_DfObEVnOL1bnLsCY70GjBQxVuCF9AQ/view?usp=sharing">Source Code For All Mutators</a></li>
+                <li><a href="https://docs.google.com/document/d/1TLX0ltg4tBLKlqrqwUA8WEWqn6_ZVkeW2xLB4rfEO4o/edit?usp=sharing">Player Help Guide For All Mutators</a></li>
+                <li><a href="https://docs.google.com/document/d/1So0d4Hm0dkEzpmSnw-u75uB1rpSKJ0lqfBolCdZRhSM/edit?usp=sharing">Leadership Help Guide For All Mutators</a></li>
+            </ul>
+
+            <img src="https://uploads.29th.org/discourse/original/2X/8/8644a80a64fdc93510c7c96951aef10310c1a25e.jpeg" alt="MutExtras Screenshot" style="max-width: 100%;">
+            <img src="https://uploads.29th.org/discourse/original/2X/0/0b673bca02f07f94997a0c752bbc7ff2a01920b6.jpeg" alt="MutExtras Screenshot" style="max-width: 100%;">
+            <img src="https://uploads.29th.org/discourse/original/2X/b/b846a6d700cd9ab4c392a6f3e309c17878e85a58.jpeg" alt="MutExtras Screenshot" style="max-width: 100%;">
+            <img src="https://uploads.29th.org/discourse/original/2X/e/ef778822accb6184378764763939b93e93357379.jpeg" alt="MutExtras Screenshot" style="max-width: 100%;">
+            <img src="https://uploads.29th.org/discourse/original/2X/5/5035a740b8eed80b53004117e35ae407ebeeb552.jpeg" alt="MutExtras Screenshot" style="max-width: 100%;">
+            <img src="https://uploads.29th.org/discourse/original/2X/5/5f5590304f85141d645ca7d89aacdd0943d3f7ff.jpeg" alt="MutExtras Screenshot" style="max-width: 100%;">
+
+            <h2>Changelog:</h2>
+
+            <ul>
+                <li>
+                    12/17/22:
+                    <ul>
+                        <li>Moved test branch to master branch</li>
+                        <li>Added new DP1S2 patch</li>
+                    </ul>
+                </li>
+                <li>
+                    11/9/22 Hotfix:
+                    <ul>
+                        <li>Fixed RPG class not showing when bAITRoles not Enabled</li>
+                        <li>Fixed loach spotting</li>
+                    </ul>
+                </li>
+                <li>
+                    10/31/22 Hotfix:
+                    <ul>
+                        <li>Fixed default keybindings causing camera perspective switching</li>
+                    </ul>
+                </li>
+                <li>
+                    10/29/22:
+                    <ul>
+                        <li>Combined with spawning Commands - done</li>
+                        <li>Implemented mutator settings - done</li>
+                        <li>Made test branch - done</li>
+                        <li>Add content references for GOM4 - done</li>
+                        <li>Made all 29thextras refs to MutExtrasTBPkg - done</li>
+                        <li>Change namevalids to return functions - done</li>
+                        <li>Make dummy actors stay for each client - done</li>
+                        <li>Fixed pilots roles showing - done</li>
+                        <li>Added 2nd Bat. logo - done</li>
+                    </ul>
+                </li>
+                <li>
+                    9/3/22:
+                    <ul>
+                        <li>Fix helmets - done</li>
+                        <li>Add dummyactor to mutextras - done</li>
+                        <li>Make help guides on all of the mutators - done</li>
+                        <li>Fix 2 AK loadouts CE - fixed</li>
+                        <li>Finish helmets - done</li>
+                        <li>Fix ammocrates? Physical ammocrate class - fixed?</li>
+                        <li>Add clearweapons to mutextras - done</li>
+                    </ul>
+                </li>
+                <li>
+                    8/27/22:
+                    <ul>
+                        <li>Fix mutcommands and mutextras conflict playercontroller - done</li>
+                        <li>SOUND BUG!!! - Is it the Tank Crew Type56-1 AK? - fixed?</li>
+                    </ul>
+                </li>
+                <li>
+                    8/21/22:
+                    <ul>
+                        <li>Made DummyActors to run client functions</li>
+                        <li>Changes to mutator names (29th Extras + Vanilla, GAM, and AC Spawning Commands, Modded Spawning Commands)</li>
+                    </ul>
+                </li>
+                <li>
+                    8/5/22:
+                    <ul>
+                        <li>Removed custom M18 smokes</li>
+                        <li>Cleaned up and optimized code</li>
+                        <li>Pilot roles don't show up on maps without valid spawns</li>
+                        <li>Spawned Helicopters no longer need a pilot role to be used</li>
+                        <li>Any team can use Helicopters now</li>
+                        <li>Added GAM vehicles to SpawnVehicle</li>
+                        <li>Mutators are now compatible with GOM and Winter War</li>
+                        <li>Changed AmmoCrateMutator to MutExtras for cohesion</li>
+                        <li>New vehicles are ACCobra, ACLoach, ACHuey, ACBushranger in the 29th Extras Mutator</li>
+                        <li>Possibly fixed sound bug</li>
+                    </ul>
+                </li>
+                <li>
+                    1/29/22:
+                    <ul>
+                        <li>Various bug fixes</li>
+                        <li>Ammo boxes not spawning - fixed</li>
+                    </ul>
+                </li>
+                <li>
+                    1/22/22:
+                    <ul>
+                        <li>Fixed bug where vanilla weapons and vehicles would not spawn</li>
+                    </ul>
+                </li>
+                <li>
+                    1/15/22:
+                    <ul>
+                        <li>Fixed barricades disappearing</li>
+                    </ul>
+                </li>
+                <li>
+                    1/8/22:
+                    <ul>
+                        <li>Added spawnvehicle to MutExtras - done</li>
+                        <li>Name exists not working on server - fixed</li>
+                        <li>Use debug spheres for prefabs - done</li>
+                        <li>Make prefab system - done</li>
+                        <li>Vault onto spawned barricades - done</li>
+                        <li>Unlimit how far away you can place barricades - done</li>
+                        <li>Make placeable barricades - done</li>
+                        <li>Fix preview mesh - done</li>
+                        <li>Fix tank damage - done?</li>
+                        <li>Skyraider, phantom broke - fixed</li>
+                        <li>Canberra collision broke - mesh problem</li>
+                        <li>Make clearbarricade in line of sight - done</li>
+                        <li>Unlimit maximum angle placing - done</li>
+                        <li>Add more logging/Notifications - done</li>
+                        <li>Clean up code (CIWS, delete unused files, etc) - done</li>
+                    </ul>
+                </li>
+                <li>
+                    11/20/21:
+                    <ul>
+                        <li>Removed double message when spawning weapons</li>
+                        <li>Removed M14 from US CE</li>
+                        <li>29th RPG's can now kill tanks, if you hit in a weak spot it will take less shots. (53K = 1, HT130 = 4, T20 = 3, T26 = 4, T28 = 5, Vickers = 4)</li>
+                    </ul>
+                </li>
+                <li>
+                    11/13/21:
+                    <ul>
+                        <li>Fixed north commander loadout</li>
+                    </ul>
+                </li>
+                <li>
+                    11/5/21:
+                    <ul>
+                        <li>Both teams can drive ground vehicles</li>
+                        <li>Put vanilla guns in MutExtras</li>
+                        <li>Fixed claymore</li>
+                        <li>Fixed Molotov</li>
+                    </ul>
+                </li>
+                <li>
+                    2021 -
+                    <ul>
+                        <li>New role system following the 29th's AITs</li>
+                        <li>Fixed textures of MKB42 and Satchel Charge</li>
+                        <li>Removed MG34 for now until I figure out a way to fix it</li>
+                        <li>Removed MKB42</li>
+                        <li>A few various bug fixes</li>
+                        <li>Added new commands: Giveweaponall, Giveweaponnorth, Giveweaponsouth, Clearweapons, ClearweaponsAll, Clearweaponsnorth, Clearweaponssouth, Thirdperson, Firstperson, Enabled artillery marks to be placed anywhere. Fixed the issue with people getting kicked when vehicles are spawned.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Current Work:</h2>
+
+            <p>I am now working on staff office patches in to put on the right side of the helmets. I have found emblems for each staff office on the internet and made my own for Lighthouse as it does not exist IRL.</p>
+            <div align="center" class="row">
+                <div class="column">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/b/b8ba79c76b77f98894f1be46be24be4b829622b0_2_375x375.png" alt="LH" style="width:100%">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/e/e4629f9b43dd73a621194f679cb98367471a8936_2_375x375.png" alt="FIN" style="width:100%">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/1/1c3e6a902faeccb35b07c6e36fe3defacc5dbc50_2_375x375.png" alt="ORD" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/d/db603aa76adf8e0f1232ce0b55932f2b23b7237b_2_375x375.png" alt="ADJ" style="width:100%">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/1/163b76f56316b71d91d060e2d76108523b4111fe_2_375x375.png" alt="MED" style="width:100%">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/2/25586ce6bd7e6d218409f24b49f8f1843d4d4e2c_2_375x375.png" alt="PA" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/1/1ff68f127fa1d15028fd061c868ae4a76ddfe7da_2_375x375.png" alt="CA" style="width:100%">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/b/bfb608a33b3f16f8b51ffb11ddba4499c9421ea4_2_375x375.png" alt="MP" style="width:100%">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/e/eaef2d06a1b74ff0d43740a892abd035ee59a49d_2_375x375.png" alt="QM" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/4/42b19f7e42290ce271e3bc60226eeddd7b2a2f0e_2_375x375.png" alt="ENG" style="width:100%">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/d/de9c06aa996f2f4f8060d6fa6279186d20631de8_2_375x375.png" alt="LOG" style="width:100%">
+                    <img src="https://uploads.29th.org/discourse/optimized/2X/6/6ac5e5e05b615cff57fd9b7f5e43949e90b16793_2_375x375.png" alt="SIG" style="width:100%">
+                </div>
+            </div>
+
+            <p>I have also gotten the salute animations to work properly.</p>
+            <div align="center">
+                <iframe align="center" width="560" height="315" src="https://www.youtube.com/embed/LVnBRCsHMOU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Luke Scovel</p>

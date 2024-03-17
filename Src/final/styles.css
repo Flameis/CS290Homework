@@ -5,22 +5,35 @@ body {
     background-color: #565a43;
     background-image: url('path/to/image.jpg');
     color: #ffffff;
-    overflow: auto;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    float: left;
-    clear: both;
-    position: relative;
-    z-index: 1;
-    width: 960px; /* Fixed-width layout */
+}
+
+main {
+    margin: 0 auto; /* Center align main content */
+    max-width: 900px; /* Set maximum width for main content */
+    padding: 20px; /* Add padding */
+    background-color: #34495e; /* Darker green background for main content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+    vertical-align: middle;
+}
+
+ul {
+    text-align: left; /* Left align bullet points */
+    padding-left: 20px; /* Add left padding to bullet points */
+}
+
+img {
+    display: block; /* Ensure images are centered properly */
+    margin: 0 auto 20px; /* Center align images and add bottom margin */
+    max-width: 100%; /* Ensure images don't exceed container width */
 }
 
 h1 {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 10px;
     font-family: sans-serif;
     font-size: 4rem;
+    text-align: center; /* Left align bullet points */
 }
 
 a {
@@ -137,4 +150,17 @@ input {
     height: 100%;
     width: 100%;
     padding: 6px 10px;
+  }
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
