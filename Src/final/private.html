@@ -29,17 +29,33 @@
                     <a href="Servers.html">Servers</a>
                 </div>
             </li>
-            <form class="formsearch" role="search">
-                <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-            </form>
         </ul>
     </nav>
 
     <main>
-        <ul>
-            <li> <a href="MutCMenu.html">MutCMenu</a> </li>
-            <li> <a href="MutExtras.html">MutExtras</a> </li>
-        </ul>
+        <div class="container">
+            <h2>Private Mutators - Sign In</h2>
+            <form action="/authenticate" method="post">
+                <input type="password" name="password" placeholder="Enter password" required>
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+
+        <script>
+            document.getElementById('signInForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var password = document.getElementById('password').value;
+    
+                // Perform password validation
+                if (password === 'your_password_here') {
+                    alert('Sign in successful! Redirecting...');
+                    // Redirect to the mutators page
+                    window.location.href = '/mutators';
+                } else {
+                    alert('Incorrect password. Please try again.');
+                }
+            });
+        </script>
     </main>
 
     <footer>
@@ -47,3 +63,4 @@
     </footer>
 </body>
 </html>
+
