@@ -30,7 +30,8 @@
                 </div>
             </li>
             <form class="formsearch" role="search">
-                <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <script src="search.js"></script>
             </form>
         </ul>
     </nav>
@@ -39,11 +40,189 @@
         <div>
             <a href="https://github.com/Flameis/MutRealismMatch" class="github-link-button">GitHub</a>
 
-            <h2>PROJECT DETAILS</h2>
+            <h2>Project Details</h2>
+            <div>
+                <p>The realism match mutator is the core mutator of all Dog Company drills. It is used to handle all of the match mode and scrimmage admin functionality. In Fall 2021 I started maintaining and updating it with new features.</p>
+                <hr>
+                <h3>General Commands</h3>
+                <ul>
+                    <li><p><em><strong>mutate realismhelp -</strong></em> Displays the help menu</p></li>
+                    <li><p><em><strong>mutate respawn -</strong></em> Respawns the player</p></li>
+                    <li><p><em><strong>mutate changename -</strong></em> Changes the player's name</p></li>
+                    <li><p><em><strong>mutate safetyoff -</strong></em> Disables the player's firing button</p></li>
+                    <li><p><em><strong>mutate safetyon -</strong></em> Enables the player's firing button</p></li>
+                </ul>
+                <hr>
+                <h3>Scrim Admin Commands</h3>
+                <ul>
+                    <li><p><em><strong>mutate scrimadminhelp -</strong></em> Displays a help menu of admin commands</p></li>
+                    <li><p><em><strong>mutate swapteams -</strong></em> Forces a team swap</p></li>
+                    <li><p><em><strong>mutate swapnorth -</strong></em> Swaps the north team to the south</p></li>
+                    <li><p><em><strong>mutate swapsouth -</strong></em> Swaps the south team to the north</p></li>
+                    <li><p><em><strong>mutate weaponshold -</strong></em> Turns on the weapons safeties of all players</p></li>
+                    <li><p><em><strong>mutate weaponsfree -</strong></em> Turns off the weapon safeties of all players</p></li>
+                    <li><p><em><strong>mutate respawnall -</strong></em> Respawns all dead players</p></li>
+                    <li><p><em><strong>mutate forcechangename [CURRENTNAME to NEWNAME] -</strong></em> Changes the name of the specified player</p></li>
+                    <li><p><em><strong>mutate whois [NAME] -</strong></em> Displays the steam64 ID and original name of the specified player</p></li>
+                </ul>
+                <hr>
+                <h3>Match Control Commands</h3>
+                <ul>
+                    <li><p><em><strong>mutate enablematch -</strong></em> Enables match mode</p></li>
+                    <li><p><em><strong>mutate disablematch -</strong></em> Disables match mode</p></li>
+                    <li><p><em><strong>mutate matchlive -</strong></em> Forces the match LIVE</p></li>
+                    <li><p><em><strong>mutate resetlive -</strong></em> Cancels LIVE</p></li>
+                    <li><p><em><strong>mutate restartround -</strong></em> Restarts the round</p></li>
+                    <li><p><em><strong>mutate endround -</strong></em> Suicides all players to end the round</p></li>
+                </ul>
+                <hr>
+                <h3>Objective Commands</h3>
+                <ul>
+                    <li><p><em><strong>mutate openobj [OBJLETTER] -</strong></em> Opens the specified objective, specify ALL to open all objectives</p></li>
+                    <li><p><em><strong>mutate closeobj [OBJLETTER] -</strong></em> Closes the specified objective, specify ALL to close all objectives</p></li>
+                    <li><p><em><strong>mutate setobjneutral [OBJLETTER] -</strong></em> Sets the specified objective neutral, specify ALL to set all objectives</p></li>
+                    <li><p><em><strong>mutate setobjnorth [OBJLETTER] -</strong></em> Sets the specified objective north owned, specify ALL to set all objectives</p></li>
+                    <li><p><em><strong>mutate setobjsouth [OBJLETTER] -</strong></em> Sets the specified objective south owned, specify ALL to set all objectives</p></li>
+                </ul>
+                <hr>
+                <h3>Match Setup Commands</h3>
+                <ul>
+                    <li><p><em><strong>mutate setroundduration [MINUTES] -</strong></em> Sets the round timer to the specified time</p></li>
+                    <li><p><em><strong>mutate setff [SCALE 0 - 1] -</strong></em> Sets the friendly fire modifier to the specified decimal</p></li>
+                    <li><p><em><strong>mutate setnorthreinforcements [AMOUNT]  -</strong></em> Sets the north ticket count to the specified amount</p></li>
+                    <li><p><em><strong>mutate setsouthreinforcements [AMOUNT] -</strong></em> Sets the south ticket count to the specified amount</p></li>
+                    <li><p><em><strong>mutate toggleautorespawns -</strong></em> Toggles auto respawns during briefing</p></li>
+                </ul>
+                <hr>
+                <h3>Chat Commands</h3>
+                <ul>
+                    <li><p><em><strong>/ready -</strong></em> Sets the players team ready</p></li>
+                    <li><p><em><strong>/notready -</strong></em> Sets the players team not ready</p></li>
+                    <li><p><em><strong>/AIT -</strong></em> Displays how many AIT slots are being used by both teams</p></li>
+                    <li><p><em><strong>/alive -</strong></em> Displays how many are players alive on each team</p></li>
+                </ul>
+                <hr>
+            </div>
 
-            <!-- Add MutRealismMatch project details here -->
+            <h2>Changelog:</h2>
+            <div>
+                <ul>
+                    <li>
+                        9/3/22
+                        <ul>
+                            <li>MAKE HELP GUIDES ON ALL OF THE MUTATORS - done</li>
+                        </ul>
+                    </li>
+                    <li>
+                        8/27/22
+                        <ul>
+                            <li>Put updated realism match mutator on servers</li>
+                        </ul>
+                    </li>
+                    <li>
+                        8/21/22
+                        <ul>
+                            <li>Made DummyActors to run client functions</li>
+                        </ul>
+                    </li>
+                    <li>
+                        8/5/22
+                        <ul>
+                            <li>Unmuting all players in 5 sec intervals (Fixes dead chat issue)</li>
+                            <li>No more ND's with the WeaponsHold and WeaponsFree commands</li>
+                            <li>All AIT weapons in classes such as radioman, commander, and sapper show as their AIT in /ait</li>
+                            <li>Changed all relevant AllActors in MutRealismMatch to WorldInfo.AllControllers</li>
+                        </ul>
+                    </li>
+                    <li>
+                        1/29/22
+                        <ul>
+                            <li>Various bug fixes</li>
+                            <li>/unready will now work</li>
+                            <li>Name Changer doesn't have time to get default. - fixed</li>
+                            <li>Make a command for clearing all Cached names and broken names - done</li>
+                        </ul>
+                    </li>
+                    <li>
+                        1/22/22
+                        <ul>
+                            <li>Name Changer release</li>
+                        </ul>
+                    </li>
+                    <li>
+                        1/8/22
+                        <ul>
+                            <li>Remove No Artillery Volumes in MutRealismMatch - done</li>
+                            <li>Add Whois command to MutRealismMatch - done</li>
+                            <li>Change name on command and save them in config - done</li>
+                            <li>Add swap teams to MutRealismMatch - done</li>
+                        </ul>
+                    </li>
+                    <li>
+                        11/13/21
+                        <ul>
+                            <li>Swapnorth and swapsouth commands</li>
+                        </ul>
+                    </li>
+                    <li>
+                        11/5/21
+                        <ul>
+                            <li>Swap teams command</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
+            <div>
+                <h2>To Do List:</h2>
+                <ul>
+                    <li>BIG UPDATE</li>
+                    <ul>
+                        <li>Figure out mutator settings - MAKE MUTATOR SETTINGS</li>
+                        <li>combine maxplayerboost with MutRealismMatch - done</li>
+                        <li>Make a test branch for each mutator</li>
+                        <li>Optimize Paradrops</li>
+                        <li>Change OBJ cap times</li>
+                    </ul>
+                    
+                    <li>New Commands:</li>
+                    <ul>
+                        <li>SETMAXPLAYERS</li>
+                    </ul>
+
+                    <li>PLAN</li>
+                    <ul>
+                        <li>Put TEST before package names. When switching test build to stable, keep TEST# and make the test build TEST#+1</li>
+                        <li>Mutator list:</li>
+                        <ul>
+                            <li>Test Branch - 29th Extras : Combine 29th Extras and Spawning Commands (use Mutator settings in webadmin to configure?)</li>
+                            <li>Test Branch - Realism Match : Combine PlayerBoost, Paradrops, ShutUp, and Realism Match</li>
+                            <li>Test Branch - Command Menu : Consolidate commands into command menu mutator</li>
+                        </ul>
+                        <li>Make a forum post in advance. When TEST build gets to a stable point, roll in with stable build</li>
+                    </ul>
+
+                    <li>NEXT UPDATE</li>
+                    <ul>
+                        <li>Realism Match open obj for respawns</li>
+                        <li>Timestamp OBJ captures</li>
+                        <li>Unmute players - Do it after people die instead of on 5 sec intervals</li>
+                        <li>make an objective anywhere</li>
+                    </ul>
+
+                    <li>LATER</li>
+                    <ul>
+                        <li>Remove team switch timer</li>
+                    </ul>
+                    <li>IDEAS</li>
+                    <ul>
+                        <li>Remove map boundaries maybe?</li>
+                    </ul>
+                </ul>
+            </div>
+            
         </div>
+        
 
         <!-- Add other sections as needed -->
 

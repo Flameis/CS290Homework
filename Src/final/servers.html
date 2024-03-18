@@ -5,4 +5,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Servers</title>
+    <style>
+        main {
+            margin: 0 auto; /* Center align main content */
+            max-width: 200%; /* Set maximum width for main content */
+            padding: 20px; /* Add padding */
+            background-color: #34495e; /* Darker green background for main content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+            vertical-align: middle;
+        }
+    </style>
 </head>
+<body>
+    <header>
+        <h1>Servers</h1>
+    </header>
+
+    <nav class="horizontal-nav">
+        <ul>
+            <li><a href="documentation.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="Public.html">Public Mutators</a>
+                <div class="dropdown-content">
+                    <a href="MutCMenu.html">MutCMenu</a>
+                    <a href="MutExtras.html">MutExtras</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="Private.html">Private Mutators</a>
+                <div class="dropdown-content">
+                    <a href="MutRealismMatch.html">MutRealismMatch</a>
+                    <a href="Servers.html">Servers</a>
+                </div>
+            </li>
+            <form class="formsearch" role="search">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <script src="search.js"></script>
+            </form>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Project Details</h2>
+        <div>
+            <p>This project post will detail all changes made to the Rising Storm 2 public and private servers.</p>
+
+            <h2>Visual Documentation</h2>
+            <div style="text-align:left;">
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnrvlnpNyqle8VMn7Y7p4xaw2mJYpczUk5-RX-w72leoU-V30tJJZicVSQdhp41vD5LVBlCeJ_t-Oz/pubhtml?widget=true&amp;headers=false" width="100%" height="1000"></iframe>
+            </div>
+        </div>
+
+        <h2>Changelog:</h2>
+        <div>
+            <ul>
+                <li>
+                    3/25/23
+                    <ul>
+                        <li>Added Don-Singh (Donner) to drill servers</li>
+                    </ul>
+                </li>
+                <li>
+                    12/17/22
+                    <ul>
+                        <li>Added skyfall to Euro server</li>
+                        <li>Removed MutCommands</li>
+                    </ul>
+                </li>
+                <li>
+                    12/10/22
+                    <ul>
+                        <li><a href="https://steamcommunity.com/workshop/filedetails/?id=2878886291">VNSU-Helicopter_Racing</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=952365960">VNTE-Cousteau Plantation</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1550783887">VNTE-DaLat</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1520566804">VNTE-FistAlphaB4</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2206424173">VNTE-Hanoi_HeightsRebootV4</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2133181887">VNTE-Hoa Lư Night</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2206115164">VNTE-Ia Drang Valley Redux</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2839060402">VNTE-IwoJima</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1750615623">VNTE-LaosRuins</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2870714704">VNTE-Mau Redux</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1624420718">VNTE-Michelin</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2122880536">VNTE-Raven</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1111561958">VNTE-SuongMu</a></li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=972644127">VNTE-TayNinhProvince</a></li>
+                    </ul>
+                </li>
+                <li>
+                    11/26/22
+                    <ul>
+                        <li>Fixed sledgehammer - done</li>
+                        <li>Removed Mau</li>
+                    </ul>
+                </li>
+                <li>
+                    9/30/22
+                    <ul>
+                        <li>Updated server welcome banners from <a href="https://www.29th.org/images/29thBannerLogos2015JUN.jpg">2015</a> image to <a href="https://www.29th.org/images/29thBannerLogos2019JAN_v1.png">2019</a> image</li>
+                        <li><a href="https://forums.tripwireinteractive.com/index.php?threads/workaround-for-steam-workshop-downloads-not-working-on-dedicated-servers.2338536/#post-2353725">Steam workshop fix deployed on all servers</a></li>
+                        <li>Fixed CuuHo</li>
+                        <li>Changed default round duration to 120 minutes (7200) on all servers</li>
+                        <li>Removed Dawn Of Xmas</li>
+                    </ul>
+                </li>
+                <li>
+                    9/3/22
+                    <ul>
+                        <li>Fix squad server killfeed timer - done</li>
+                        <li>Add new maps to server guide - done</li>
+                        <li>Add <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2459453082">VNTE-OperationSerpent</a></li>
+                        <li>Add <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1292265721">VNTE-TanLoi</a></li>
+                        <li>Add <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2847633356">VNSU-KakarikoVillage</a></li>
+                        <li>Add <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1703085646">VNTE-Sledgehammer</a></li>
+                    </ul>
+                </li>
+                <li>
+                    8/27/22
+                    <ul>
+                        <li>Put updated realism match mutator on servers</li>
+                    </ul>
+                </li>
+                <li>
+                    8/21/22
+                    <ul>
+                        <li>Fixed firebase georgina on euro</li>
+                    </ul>
+                </li>
+                <li>
+                    4/10/22
+                    <ul>
+                        <li>Clear out the cache and workshop folders of both servers of all unused and/or broken maps</li>
+                        <ul>
+                            <li>1DawnOfTet - Update available</li>
+                            <li>AShauValley_Au - Old</li>
+                            <li>VNTE-Bridges_of_Ben_Tre_ARVN - Old</li>
+                            <li>DaNang_v7 - Old</li>
+                            <li>Don_Singh - Old</li>
+                            <li>HaoDrangValley - Old</li>
+                            <li>JungleRaid - Multiple Copies</li>
+                            <li>Neon - Update available</li>
+                            <li>NineDragons - Multiple Copies and broken</li>
+                            <li>Operation_IrvingB1 - Old</li>
+                            <li>PhanCong - Broken</li>
+                            <li>TayNinhProvince - Multiple Copies and old</li>
+                        </ul>
+                        <li>For both public servers, bump down the punish scale a bit to help avoid commanders being kicked for team damage</li>
+                        <ul>
+                            <li>Artillery Punish Scale 0.5 to 0.25</li>
+                            <li>Explosive Punish Scale 1.5 to 1</li>
+                        </ul>
+                        <li>For NY#1, lower the number of rounds on one map to 1 to make it so a map doesn't drag on too long</li>
+                        <li>For NY#1, make a new map voting cycle with more custom maps and refresh it every month or so</li>
+                        <li>For NY#2, make a new campaign map with more custom maps</li>
+                    </ul>
+                </li>
+                <li>
+                    2022
+                    <ul>
+                        <li>Dawn Of Tet fixed on company and platoon</li>
+                        <li>Khe Sahn Hills fixed</li>
+                        <li>Made ShutUp accessible with WW</li>
+                        <li>Fixed GAM on Platoon server</li>
+                        <li>Sorted workshop config by numbers</li>
+                        <li>Phong Nha duplicate</li>
+                        <li>Deleted old files</li>
+                        <li>Replaced Engine folder platoon</li>
+                        <li>Added gom workshop helper</li>
+                        <li>Added Winter War to squad server</li>
+                        <li>Added maps:</li>
+                        <ul>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1559761103">Dawn Of Tet</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1281593321">Ripcord</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1628460046">Khe Sahn Hills</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2154236100">Air assault 29</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2154404598">Lolo 29</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1542633851">vnte death hills</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2464655505">mau fixed</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2352868055">Torkkelinpuisto</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2202858715">Operation Spearhead Redux</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2204801647">Operation Valkyrie Fixed</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2249833578">Deep Jungle Redux</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1615113119">VNTE-Agent_Orange(Reupload)</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1610337353">District</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2514988801">Firebase Betty</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2334975476">Kangasranta</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2392711694">Napalm Star</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1801929146">VNTE-Hoa Lư</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2520706665">Hai Nam</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1662449937">Cambodian Incursion Rerelease</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2118156529">Apache Snow Rain</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2201900199">An Cuu Bridge Redux</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2422994282">Strike at Karkand</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2328231622">Tammisuo</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2345165332">Koivisto</a></li>
+                            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2244428755">Rice Elevator</a></li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h2>To Do List:</h2>
+        <div>
+            <ul>
+                <li>Maps to add:</li>
+                <li>Later:</li>
+                <ul>
+                    <li>fix squad and euro server minplayers so bots don't spawn in winter war</li>
+                    <li>fix GAM team swapping</li>
+                    <li>Change NY#1 to map rotation instead of map voting</li>
+                    <li>Remove ACB 29th</li>
+                    <li>Remove Vantage Point 29th</li>
+                    <li>Remove Cambodian Incursion 29th</li>
+                    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2013290886">Lolo Redux</a> - remove/add to pub servers?</li>
+                    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2682086875">Air Assault</a> - deleted</li>
+                    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2207482278">OI Redux</a></li>
+                </ul>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Luke Scovel</p>
+    </footer>
+</body>
+</html>
