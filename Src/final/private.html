@@ -33,29 +33,10 @@
     </nav>
 
     <main>
-        <div class="container">
-            <h2>Private Mutators - Sign In</h2>
-            <form action="/authenticate" method="post">
-                <input type="password" name="password" placeholder="Enter password" required>
-                <input type="submit" value="Sign In">
-            </form>
-        </div>
-
-        <script>
-            document.getElementById('signInForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                var password = document.getElementById('password').value;
-    
-                // Perform password validation
-                if (password === 'your_password_here') {
-                    alert('Sign in successful! Redirecting...');
-                    // Redirect to the mutators page
-                    window.location.href = '/mutators';
-                } else {
-                    alert('Incorrect password. Please try again.');
-                }
-            });
-        </script>
+        <ul>
+            <li> <a href="MutRealismMatch.html">MutRealismMatch</a> </li>
+            <li> <a href="Servers.html">Servers</a> </li>
+        </ul>
     </main>
 
     <footer>

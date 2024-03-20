@@ -16,6 +16,12 @@
             vertical-align: middle;
         }
     </style>
+    <script>
+        // If logged in in the cookies, allow access, else go to login page
+        if (document.cookie.indexOf("loggedIn") == -1) {
+            window.location.href = "login.html?redirect=mutrealismmatch";
+        }
+    </script>
 </head>
 <body>
     <header>
